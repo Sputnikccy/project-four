@@ -1,0 +1,114 @@
+@use "variables" as *;
+
+.inviteCard{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .imgContainer {
+        margin-top: 2rem;
+        width: clamp(375px, 75%, 750px);
+        display: flex;
+        justify-content: space-around;
+        img {
+            max-width: 100%;
+            border: 10px double #71982f;
+            border-radius: 1rem;
+            background: white;
+        }
+    }
+}
+.cardContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 10px double #f7f5f1;
+        border-radius: 1rem;
+        background-color: #71982f;
+
+        width: clamp(375px, 75%, 750px);
+        margin: 2rem auto;
+
+        .activityInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f8bd01;
+            border-radius: 1rem;
+            border:10px double  $whiteColor;
+            padding: 2%;
+            margin: 0.5rem ;
+            img {
+                width: clamp(100px,100%,600px);
+                border:5px double  $whiteColor;
+                border-radius: 1rem;
+                // margin-bottom: .8rem;
+            }
+            .activityTitle{
+                text-transform: capitalize;
+                font:italic 1.5rem $bodyFont;
+                color: rgb(68, 70, 67);
+                margin-bottom: .8rem;
+                padding-top: 0.8rem;
+            }
+            p{
+                font: 1.2rem $bodyFont;
+                color: rgb(68, 70, 67);
+                margin-bottom: .8rem;
+            }
+        }
+
+        .eventTheme{
+            text-transform: capitalize;
+            font: 3rem $headingFont;
+            color: $whiteColor;
+            margin: 1.5rem;
+        }
+        .host {
+            font: 1.2rem $bodyFont;
+            margin-bottom: 1rem;
+            margin-top: 0.8rem;
+            color: rgb(68, 70, 67);
+            span{
+                font:1.5rem;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+        }
+}
+.inviteButton{
+    border: none;
+    font: 1.3rem "Josefin Sans";
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 2rem;
+    padding: 0.4rem 0.9rem;
+    width: 8.2rem;
+    color: rgb(0, 0, 0);
+    background-color: #f8bd01;
+    transition: 0.25s;
+    margin: 1.5rem auto;
+}
+
+.descriptionText{
+    max-width: 80%;
+    height: 100px;
+    overflow-wrap: break-word;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        p {
+            font: 1.2rem $bodyFont;
+            color: rgb(68, 70, 67);
+            display: inline;
+            padding-bottom: 0.02rem;
+            &:first-child {
+                text-decoration: underline;
+            }
+        }
+}
