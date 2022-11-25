@@ -44,7 +44,7 @@
                 width: clamp(100px,100%,600px);
                 border:5px double  $whiteColor;
                 border-radius: 1rem;
-                // margin-bottom: .8rem;
+               
             }
             .activityTitle{
                 text-transform: capitalize;
@@ -111,4 +111,13 @@
                 text-decoration: underline;
             }
         }
+}
+
+@media (max-width: 500px){
+    .cardContent{
+       
+        border: 5px solid #f7f5f1;
+       
+
+    }
 }

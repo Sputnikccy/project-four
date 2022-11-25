@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import axios from "axios"
 import {useState} from 'react'
 //import placeholder pic
-import placeholderPic from '../assets/5332277.jpg'
+import placeholderPic from '../assets/333.jpg'
 
 
 const BoredComponent = () => {
@@ -74,7 +74,7 @@ const BoredComponent = () => {
     return (
         <div className='boredCatalogue'>
             <form action="submit" onSubmit={getActivity}>
-                {/* sr-only not working here, need to be figured out later */}
+              
                 <select
                     id='choice'
                     onChange={handleUserChoice}
@@ -87,7 +87,7 @@ const BoredComponent = () => {
                     <option value="diy">diy</option>
                     <option value="charity">charity</option>
                 </select>
-                {/* sr-only not working here, need to be figured out later */}
+                
 
 
                 <button className="activitiesBtn" onClick={handleOnclick}>Click for activities</button>
@@ -102,9 +102,6 @@ const BoredComponent = () => {
                     : <img src={placeHolderImage} alt={activities.activity}/>}
 
 
-
-                {/* <p className="activity">{activities.activity}</p> */}
-                {/* <p className="activitiesType">{activities.type}</p> */}
                 <p className='participants'>Number of participants: {activities.participants}</p>
                 <Link to={`/boredForm/${activities.key}`} className="eventBtn">
                     <button >Create event</button>

@@ -11,12 +11,15 @@
     align-items: center;
     border-radius: 1rem;
     border: 10px double $whiteColor;
+    // height: 110vh;
+   
 }
 
 .formContainer{
     display: flex;
     flex-direction: column;
     padding: 2rem auto;
+
     form {
         display: flex;
         flex-direction: column;
@@ -32,14 +35,15 @@
         border: none;
         padding: .2rem;
         border-radius: 1rem;
-        width: 75%;
-        margin-bottom: .8rem;
+        width: 55%;
+        margin-bottom: .7rem;
     }
     textarea {
-        width: 75%;
+        width: 70%;
         border-radius: 1rem;
         height: 5rem;
         border-style: none;
+        margin-bottom: .5rem;
     }
     button {
         border: none;
@@ -49,8 +53,8 @@
         text-align: center;
         transition: .3s;
         border-radius: 2rem;
-        padding: .4rem .9rem;
-        width: 8rem;
+        padding: .5rem;
+        width: 30%;
         color: $blackColor;
         background-color: #f8bd01;
         transition: 0.250s;
@@ -72,6 +76,7 @@
     color: white;
     padding: .5rem 0;
     white-space: nowrap;
+
     // text animation
 .letter {
     animation: fly-up-twist .8s ease-in-out;
@@ -110,4 +115,81 @@
     .eventFormContainer {
         width: 80%;
     }
+}
+
+@media (max-width: 1024px) {
+    .eventFormContainer{
+        height: 110vh;
+    }
+    
+}
+
+@media (max-width: 820px) {
+    @media (max-width: 1024px) {
+        .eventFormContainer{
+            height: auto;
+        }
+
+        .boredFormH2{
+            margin-bottom: .5rem;
+        }
+
+        .formContainer{
+            input{
+                margin-bottom: 1.5rem;
+                height: 3rem;
+            }
+            label{
+                margin-bottom: .5rem;
+            }
+            textarea{
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 500px){
+    html {
+        font-size: 100%;
+      }
+
+      .eventFormContainer{
+        // height: 100vh;
+
+        button{
+            width: 45%;
+            font-size: 1rem;
+        }
+        .formContainer{
+            input{
+                margin-bottom: 1rem;
+            }
+            label{
+                margin-bottom: .5rem;
+            }
+            textarea{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+      
+}
+
+@media (max-width: 380px){
+    html {
+        font-size: 90%;
+      }
+
+      .formContainer{
+        input{
+            
+            height: 2rem;
+        }
+    
+    }
+
+
 }
