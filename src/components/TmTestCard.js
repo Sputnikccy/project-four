@@ -22,7 +22,7 @@ const TmTestCard = () => {
    
 
    //local address
-    let text = `localhost:3000/tmcard/${userId}`
+    let text = `https://flock-of-friends.netlify.app/tmcard/${userId}`
 
 
     useEffect(() => {

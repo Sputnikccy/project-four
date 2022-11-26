@@ -61,7 +61,7 @@ const apiCheck = (key) => {
 const [activityImage, setActivityImage] = useState({})
 
 
-let text  = `localhost:3000/boredInvite/${userId}`
+let text  = `https://flock-of-friends.netlify.app/boredInvite/${userId}`
 
 const copyText = ()=>{
     navigator.clipboard.writeText(text)
