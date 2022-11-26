@@ -36,7 +36,7 @@ const BoredInvite =() =>{
 
 const apiCheck = (key) => {
     axios({
-        url: `http://www.boredapi.com/api/activity?key=${key}`,
+        url: `https://www.boredapi.com/api/activity?key=${key}`,
         method: 'GET',
         dataResponse: 'json'
     })
