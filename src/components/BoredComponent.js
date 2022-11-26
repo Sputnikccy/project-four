@@ -12,7 +12,7 @@ const BoredComponent = () => {
 
         e.preventDefault()
         const options = {
-            url: `http://www.boredapi.com/api/activity?type=${userChoice}`,
+            url: `https://www.boredapi.com/api/activity?type=${userChoice}`,
             method: 'GET',
             dataResponse: 'json'
         };
@@ -44,9 +44,6 @@ const BoredComponent = () => {
             setActivityImage(apiImage)
         })
     }
-
-
-
 
 
     //track data from API
